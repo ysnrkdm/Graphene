@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B54AB341DC63051006A222F /* Graphene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54AB331DC63051006A222F /* Graphene.swift */; };
+		8B54AB351DC6305D006A222F /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136381DC621D3002F2748 /* Board.swift */; };
+		8B54AB361DC63060006A222F /* BoardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136391DC621D3002F2748 /* BoardBuilder.swift */; };
+		8B54AB371DC63062006A222F /* BoardMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11363A1DC621D3002F2748 /* BoardMediator.swift */; };
+		8B54AB381DC63064006A222F /* BoardRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11363B1DC621D3002F2748 /* BoardRepresentation.swift */; };
+		8B54AB391DC63066006A222F /* FasterBitBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11363C1DC621D3002F2748 /* FasterBitBoard.swift */; };
+		8B54AB3A1DC63069006A222F /* SimpleBitBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11363D1DC621D3002F2748 /* SimpleBitBoard.swift */; };
+		8B54AB3B1DC6306B006A222F /* Zones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11363E1DC621D3002F2748 /* Zones.swift */; };
+		8B54AB3C1DC63072006A222F /* EdaxProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136401DC621D3002F2748 /* EdaxProtocol.swift */; };
+		8B54AB3D1DC63075006A222F /* ClassicalEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136421DC621D3002F2748 /* ClassicalEvaluator.swift */; };
+		8B54AB3E1DC63077006A222F /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136431DC621D3002F2748 /* Evaluator.swift */; };
+		8B54AB3F1DC6307A006A222F /* SimpleEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136441DC621D3002F2748 /* SimpleEvaluator.swift */; };
+		8B54AB401DC63081006A222F /* intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136471DC621D3002F2748 /* intrinsics.c */; };
+		8B54AB411DC6308B006A222F /* ProofSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11364A1DC621D3002F2748 /* ProofSolver.swift */; };
+		8B54AB421DC635BE006A222F /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136511DC621D3002F2748 /* Info.swift */; };
+		8B54AB431DC635C0006A222F /* RandomWithWeightsThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136521DC621D3002F2748 /* RandomWithWeightsThink.swift */; };
+		8B54AB441DC635C2006A222F /* Think.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136531DC621D3002F2748 /* Think.swift */; };
+		8B54AB451DC63883006A222F /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11364E1DC621D3002F2748 /* Search.swift */; };
+		8B54AB461DC63886006A222F /* NegaAlphaSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11364D1DC621D3002F2748 /* NegaAlphaSearch.swift */; };
+		8B54AB471DC63895006A222F /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136551DC621D3002F2748 /* Stack.swift */; };
+		8B54AB481DC63899006A222F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1136561DC621D3002F2748 /* Utils.swift */; };
+		8B54AB491DC638AC006A222F /* SimpleProofSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11364B1DC621D3002F2748 /* SimpleProofSolver.swift */; };
+		8B54AB4B1DC776B7006A222F /* RandomWithPNSThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54AB4A1DC776B7006A222F /* RandomWithPNSThink.swift */; };
+		8B54AB4D1DC77A89006A222F /* GreedyThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54AB4C1DC77A89006A222F /* GreedyThink.swift */; };
+		8B54AB4F1DC77DCB006A222F /* SimpleSearchStaticEvaluationThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54AB4E1DC77DCB006A222F /* SimpleSearchStaticEvaluationThink.swift */; };
+		8B54AB511DC78011006A222F /* SearchEvalThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54AB501DC78011006A222F /* SearchEvalThink.swift */; };
+		8B54AB531DC78211006A222F /* TreeSearchWithPerturbationThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54AB521DC78211006A222F /* TreeSearchWithPerturbationThink.swift */; };
+		8BF230681DC8E336000E7DBA /* LeftyThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF230671DC8E336000E7DBA /* LeftyThink.swift */; };
+		8BF2306A1DC8E346000E7DBA /* SwingThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF230691DC8E346000E7DBA /* SwingThink.swift */; };
+		_LinkFileRef_Graphene_via_GrapheneTestSuite /* Graphene.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Graphene" /* Graphene.framework */; };
+		__src_cc_ref_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B1136361DC621AB002F2748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Graphene";
+			remoteInfo = Graphene;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B1136381DC621D3002F2748 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		8B1136391DC621D3002F2748 /* BoardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardBuilder.swift; sourceTree = "<group>"; };
+		8B11363A1DC621D3002F2748 /* BoardMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardMediator.swift; sourceTree = "<group>"; };
+		8B11363B1DC621D3002F2748 /* BoardRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardRepresentation.swift; sourceTree = "<group>"; };
+		8B11363C1DC621D3002F2748 /* FasterBitBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FasterBitBoard.swift; sourceTree = "<group>"; };
+		8B11363D1DC621D3002F2748 /* SimpleBitBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBitBoard.swift; sourceTree = "<group>"; };
+		8B11363E1DC621D3002F2748 /* Zones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zones.swift; sourceTree = "<group>"; };
+		8B1136401DC621D3002F2748 /* EdaxProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdaxProtocol.swift; sourceTree = "<group>"; };
+		8B1136421DC621D3002F2748 /* ClassicalEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicalEvaluator.swift; sourceTree = "<group>"; };
+		8B1136431DC621D3002F2748 /* Evaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluator.swift; sourceTree = "<group>"; };
+		8B1136441DC621D3002F2748 /* SimpleEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEvaluator.swift; sourceTree = "<group>"; };
+		8B1136461DC621D3002F2748 /* Graphene-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Graphene-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B1136471DC621D3002F2748 /* intrinsics.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = intrinsics.c; sourceTree = "<group>"; };
+		8B1136481DC621D3002F2748 /* intrinsics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = intrinsics.h; sourceTree = "<group>"; };
+		8B11364A1DC621D3002F2748 /* ProofSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofSolver.swift; sourceTree = "<group>"; };
+		8B11364B1DC621D3002F2748 /* SimpleProofSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProofSolver.swift; sourceTree = "<group>"; };
+		8B11364D1DC621D3002F2748 /* NegaAlphaSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegaAlphaSearch.swift; sourceTree = "<group>"; };
+		8B11364E1DC621D3002F2748 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		8B11364F1DC621D3002F2748 /* Swift_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swift_Bridging_Header.h; sourceTree = "<group>"; };
+		8B1136511DC621D3002F2748 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		8B1136521DC621D3002F2748 /* RandomWithWeightsThink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWithWeightsThink.swift; sourceTree = "<group>"; };
+		8B1136531DC621D3002F2748 /* Think.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think.swift; sourceTree = "<group>"; };
+		8B1136551DC621D3002F2748 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		8B1136561DC621D3002F2748 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8B54AB331DC63051006A222F /* Graphene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphene.swift; sourceTree = "<group>"; };
+		8B54AB4A1DC776B7006A222F /* RandomWithPNSThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomWithPNSThink.swift; sourceTree = "<group>"; };
+		8B54AB4C1DC77A89006A222F /* GreedyThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreedyThink.swift; sourceTree = "<group>"; };
+		8B54AB4E1DC77DCB006A222F /* SimpleSearchStaticEvaluationThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSearchStaticEvaluationThink.swift; sourceTree = "<group>"; };
+		8B54AB501DC78011006A222F /* SearchEvalThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEvalThink.swift; sourceTree = "<group>"; };
+		8B54AB521DC78211006A222F /* TreeSearchWithPerturbationThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeSearchWithPerturbationThink.swift; sourceTree = "<group>"; };
+		8BF230671DC8E336000E7DBA /* LeftyThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftyThink.swift; sourceTree = "<group>"; };
+		8BF230691DC8E346000E7DBA /* SwingThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwingThink.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Graphene.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Graphene.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_GrapheneTestSuite_Info.plist /* GrapheneTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = GrapheneTestSuite_Info.plist; path = Graphene.xcodeproj/GrapheneTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
+		__PBXFileRef_Graphene_Info.plist /* Graphene_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Graphene_Info.plist; path = Graphene.xcodeproj/Graphene_Info.plist; sourceTree = SOURCE_ROOT; };
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapheneTests.swift; sourceTree = "<group>"; };
+		"_____Product_Graphene" /* Graphene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Graphene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_GrapheneTestSuite" /* GrapheneTestSuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = GrapheneTestSuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		"___LinkPhase_Graphene" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_GrapheneTestSuite" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Graphene_via_GrapheneTestSuite /* Graphene.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B1136371DC621D3002F2748 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				8B1136381DC621D3002F2748 /* Board.swift */,
+				8B1136391DC621D3002F2748 /* BoardBuilder.swift */,
+				8B11363A1DC621D3002F2748 /* BoardMediator.swift */,
+				8B11363B1DC621D3002F2748 /* BoardRepresentation.swift */,
+				8B11363C1DC621D3002F2748 /* FasterBitBoard.swift */,
+				8B11363D1DC621D3002F2748 /* SimpleBitBoard.swift */,
+				8B11363E1DC621D3002F2748 /* Zones.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		8B11363F1DC621D3002F2748 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				8B1136401DC621D3002F2748 /* EdaxProtocol.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		8B1136411DC621D3002F2748 /* Evaluator */ = {
+			isa = PBXGroup;
+			children = (
+				8B1136421DC621D3002F2748 /* ClassicalEvaluator.swift */,
+				8B1136431DC621D3002F2748 /* Evaluator.swift */,
+				8B1136441DC621D3002F2748 /* SimpleEvaluator.swift */,
+			);
+			path = Evaluator;
+			sourceTree = "<group>";
+		};
+		8B1136451DC621D3002F2748 /* Intrinsics */ = {
+			isa = PBXGroup;
+			children = (
+				8B1136461DC621D3002F2748 /* Graphene-Bridging-Header.h */,
+				8B1136471DC621D3002F2748 /* intrinsics.c */,
+				8B1136481DC621D3002F2748 /* intrinsics.h */,
+			);
+			path = Intrinsics;
+			sourceTree = "<group>";
+		};
+		8B1136491DC621D3002F2748 /* ProofSolver */ = {
+			isa = PBXGroup;
+			children = (
+				8B11364A1DC621D3002F2748 /* ProofSolver.swift */,
+				8B11364B1DC621D3002F2748 /* SimpleProofSolver.swift */,
+			);
+			path = ProofSolver;
+			sourceTree = "<group>";
+		};
+		8B11364C1DC621D3002F2748 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8B11364D1DC621D3002F2748 /* NegaAlphaSearch.swift */,
+				8B11364E1DC621D3002F2748 /* Search.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8B1136501DC621D3002F2748 /* Think */ = {
+			isa = PBXGroup;
+			children = (
+				8B1136511DC621D3002F2748 /* Info.swift */,
+				8B1136521DC621D3002F2748 /* RandomWithWeightsThink.swift */,
+				8B1136531DC621D3002F2748 /* Think.swift */,
+				8B54AB4A1DC776B7006A222F /* RandomWithPNSThink.swift */,
+				8B54AB4C1DC77A89006A222F /* GreedyThink.swift */,
+				8B54AB4E1DC77DCB006A222F /* SimpleSearchStaticEvaluationThink.swift */,
+				8B54AB501DC78011006A222F /* SearchEvalThink.swift */,
+				8B54AB521DC78211006A222F /* TreeSearchWithPerturbationThink.swift */,
+				8BF230671DC8E336000E7DBA /* LeftyThink.swift */,
+				8BF230691DC8E346000E7DBA /* SwingThink.swift */,
+			);
+			path = Think;
+			sourceTree = "<group>";
+		};
+		8B1136541DC621D3002F2748 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8B1136551DC621D3002F2748 /* Stack.swift */,
+				8B1136561DC621D3002F2748 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		TestProducts_ /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_____Product_GrapheneTestSuite" /* GrapheneTestSuite.xctest */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				"_______Tests_" /* Tests */,
+				"____Products_" /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"____Products_" /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				TestProducts_ /* Tests */,
+				"_____Product_Graphene" /* Graphene.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Graphene.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_Graphene" /* Graphene */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_Graphene" /* Graphene */ = {
+			isa = PBXGroup;
+			children = (
+				8B54AB331DC63051006A222F /* Graphene.swift */,
+				8B1136371DC621D3002F2748 /* Board */,
+				8B11363F1DC621D3002F2748 /* Communication */,
+				8B1136411DC621D3002F2748 /* Evaluator */,
+				8B1136451DC621D3002F2748 /* Intrinsics */,
+				8B1136491DC621D3002F2748 /* ProofSolver */,
+				8B11364C1DC621D3002F2748 /* Search */,
+				8B11364F1DC621D3002F2748 /* Swift_Bridging_Header.h */,
+				8B1136501DC621D3002F2748 /* Think */,
+				8B1136541DC621D3002F2748 /* Utils */,
+				__PBXFileRef_Graphene_Info.plist /* Graphene_Info.plist */,
+			);
+			name = Graphene;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_GrapheneTestSuite" /* GrapheneTestSuite */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift */,
+				__PBXFileRef_GrapheneTestSuite_Info.plist /* GrapheneTestSuite_Info.plist */,
+			);
+			name = GrapheneTestSuite;
+			path = Tests/Graphene;
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_GrapheneTestSuite" /* GrapheneTestSuite */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"______Target_Graphene" /* Graphene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Graphene" /* Build configuration list for PBXNativeTarget "Graphene" */;
+			buildPhases = (
+				CompilePhase_Graphene /* Sources */,
+				"___LinkPhase_Graphene" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graphene;
+			productName = Graphene;
+			productReference = "_____Product_Graphene" /* Graphene.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_GrapheneTestSuite" /* GrapheneTestSuite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_GrapheneTestSuite" /* Build configuration list for PBXNativeTarget "GrapheneTestSuite" */;
+			buildPhases = (
+				CompilePhase_GrapheneTestSuite /* Sources */,
+				"___LinkPhase_GrapheneTestSuite" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Graphene /* PBXTargetDependency */,
+			);
+			name = GrapheneTestSuite;
+			productName = GrapheneTestSuite;
+			productReference = "_____Product_GrapheneTestSuite" /* GrapheneTestSuite.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"______Target_Graphene" = {
+						DevelopmentTeam = X946KV89SN;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "Graphene" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"______Target_Graphene" /* Graphene */,
+				"______Target_GrapheneTestSuite" /* GrapheneTestSuite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CompilePhase_Graphene /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				8B54AB351DC6305D006A222F /* Board.swift in Sources */,
+				8B54AB3D1DC63075006A222F /* ClassicalEvaluator.swift in Sources */,
+				8B54AB361DC63060006A222F /* BoardBuilder.swift in Sources */,
+				8B54AB421DC635BE006A222F /* Info.swift in Sources */,
+				8B54AB341DC63051006A222F /* Graphene.swift in Sources */,
+				8B54AB441DC635C2006A222F /* Think.swift in Sources */,
+				8B54AB401DC63081006A222F /* intrinsics.c in Sources */,
+				8B54AB3A1DC63069006A222F /* SimpleBitBoard.swift in Sources */,
+				8B54AB3F1DC6307A006A222F /* SimpleEvaluator.swift in Sources */,
+				8B54AB451DC63883006A222F /* Search.swift in Sources */,
+				8B54AB4F1DC77DCB006A222F /* SimpleSearchStaticEvaluationThink.swift in Sources */,
+				8B54AB4D1DC77A89006A222F /* GreedyThink.swift in Sources */,
+				8B54AB511DC78011006A222F /* SearchEvalThink.swift in Sources */,
+				8BF230681DC8E336000E7DBA /* LeftyThink.swift in Sources */,
+				8B54AB391DC63066006A222F /* FasterBitBoard.swift in Sources */,
+				8B54AB3B1DC6306B006A222F /* Zones.swift in Sources */,
+				8B54AB411DC6308B006A222F /* ProofSolver.swift in Sources */,
+				8BF2306A1DC8E346000E7DBA /* SwingThink.swift in Sources */,
+				8B54AB461DC63886006A222F /* NegaAlphaSearch.swift in Sources */,
+				8B54AB3E1DC63077006A222F /* Evaluator.swift in Sources */,
+				8B54AB3C1DC63072006A222F /* EdaxProtocol.swift in Sources */,
+				8B54AB471DC63895006A222F /* Stack.swift in Sources */,
+				8B54AB4B1DC776B7006A222F /* RandomWithPNSThink.swift in Sources */,
+				8B54AB491DC638AC006A222F /* SimpleProofSolver.swift in Sources */,
+				8B54AB481DC63899006A222F /* Utils.swift in Sources */,
+				8B54AB431DC635C0006A222F /* RandomWithWeightsThink.swift in Sources */,
+				8B54AB531DC78211006A222F /* TreeSearchWithPerturbationThink.swift in Sources */,
+				8B54AB371DC63062006A222F /* BoardMediator.swift in Sources */,
+				8B54AB381DC63064006A222F /* BoardRepresentation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_GrapheneTestSuite /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		__Dependency_Graphene /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Graphene" /* Graphene */;
+			targetProxy = 8B1136361DC621AB002F2748 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		_ReleaseConf_Graphene /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X946KV89SN;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Graphene.xcodeproj/Graphene_Info.plist;
+				INSTALL_PATH = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.euphonictech.Graphene;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = "";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		_ReleaseConf_GrapheneTestSuite /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Graphene.xcodeproj/GrapheneTestSuite_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		"___DebugConf_Graphene" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X946KV89SN;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Graphene.xcodeproj/Graphene_Info.plist;
+				INSTALL_PATH = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.euphonictech.Graphene;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		"___DebugConf_GrapheneTestSuite" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Graphene.xcodeproj/GrapheneTestSuite_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"_____Release_" /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_Graphene.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_Graphene.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		"___RootConfs_" /* Build configuration list for PBXProject "Graphene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Graphene" /* Build configuration list for PBXNativeTarget "Graphene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Graphene" /* Debug */,
+				_ReleaseConf_Graphene /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_GrapheneTestSuite" /* Build configuration list for PBXNativeTarget "GrapheneTestSuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_GrapheneTestSuite" /* Debug */,
+				_ReleaseConf_GrapheneTestSuite /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
+}
