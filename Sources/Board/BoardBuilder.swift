@@ -9,7 +9,7 @@
 import Foundation
 
 open class BoardBuilder {
-    internal class func build(_ fromText: String) -> BoardRepresentation {
+    public class func build(_ fromText: String) -> BoardRepresentation {
         let board = SimpleBitBoard()
         board.initialize(8, height: 8)
 
@@ -33,7 +33,7 @@ open class BoardBuilder {
         return ret
     }
 
-    internal class func buildBitBoard(_ fromText: String) -> BoardRepresentation {
+    public class func buildBitBoard(_ fromText: String) -> BoardRepresentation {
         let board = SimpleBitBoard()
         board.initialize(8, height: 8)
 
