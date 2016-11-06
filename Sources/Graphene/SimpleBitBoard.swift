@@ -35,8 +35,15 @@ let magic: UInt64 = 0x03f79d71b4cb0a89
 //    return bsfMagicTable[index]
 //}
 
+#if os(Linux)
+import Intrinsics
+#else
 @_silgen_name("_bitScanForward")
     func _bitScanForward(_: UInt64) -> UInt
+    
+@_silgen_name("_bitPop")
+    func _bitPop(_: UInt64) -> UInt
+#endif
 
 func bitScanForward(_ board: UInt64) -> Int {
     return Int(_bitScanForward(board))
@@ -53,9 +60,6 @@ func bitWhere(_ x: Int) -> UInt64 {
 func bitWhere(_ x: Int, y: Int) -> UInt64 {
     return 1 << (UInt64(x) + UInt64(y) * 8)
 }
-
-@_silgen_name("_bitPop")
-    func _bitPop(_: UInt64) -> UInt
 
 func pop(_ i:UInt64) -> Int {
     return Int(_bitPop(i))

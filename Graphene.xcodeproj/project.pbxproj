@@ -34,7 +34,7 @@
 		8BB558201DCF04F400D6202A /* TreeSearchWithPerturbationThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558161DCF04F400D6202A /* TreeSearchWithPerturbationThink.swift */; };
 		8BB558231DCF052200D6202A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558211DCF052200D6202A /* Stack.swift */; };
 		8BB558241DCF052200D6202A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558221DCF052200D6202A /* Utils.swift */; };
-		8BB5583A1DCF073D00D6202A /* intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558271DCF056300D6202A /* intrinsics.c */; };
+		8BB5583A1DCF073D00D6202A /* Intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558271DCF056300D6202A /* Intrinsics.c */; };
 		_LinkFileRef_Graphene_via_GrapheneTestSuite /* Graphene.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Graphene" /* Graphene.framework */; };
 		__src_cc_ref_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift */; };
 /* End PBXBuildFile section */
@@ -77,12 +77,10 @@
 		8BB558161DCF04F400D6202A /* TreeSearchWithPerturbationThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeSearchWithPerturbationThink.swift; path = Sources/Graphene/TreeSearchWithPerturbationThink.swift; sourceTree = SOURCE_ROOT; };
 		8BB558211DCF052200D6202A /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = Sources/Graphene/Stack.swift; sourceTree = SOURCE_ROOT; };
 		8BB558221DCF052200D6202A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Graphene/Utils.swift; sourceTree = SOURCE_ROOT; };
-		8BB558271DCF056300D6202A /* intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = intrinsics.c; sourceTree = "<group>"; };
+		8BB558271DCF056300D6202A /* Intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Intrinsics.c; sourceTree = "<group>"; };
 		8BB558311DCF06D700D6202A /* Intrinsics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Intrinsics.h; sourceTree = "<group>"; };
 		8BB558321DCF06D700D6202A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BB5583B1DCF0B1400D6202A /* Graphene-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Graphene-Bridging-Header.h"; path = "include/Graphene-Bridging-Header.h"; sourceTree = "<group>"; };
-		8BB5583C1DCF0B1400D6202A /* intrinsics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = intrinsics.h; path = include/intrinsics.h; sourceTree = "<group>"; };
-		8BB5583D1DCF0B1400D6202A /* Swift_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Swift_Bridging_Header.h; path = Intrinsics/include/Swift_Bridging_Header.h; sourceTree = "<group>"; };
+		8BB5583C1DCF0B1400D6202A /* Intrinsics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Intrinsics.h; path = include/Intrinsics.h; sourceTree = "<group>"; };
 		__PBXFileRef_Graphene.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Graphene.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_GrapheneTestSuite_Info.plist /* GrapheneTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = GrapheneTestSuite_Info.plist; path = Graphene.xcodeproj/GrapheneTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
 		__PBXFileRef_Graphene_Info.plist /* Graphene_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Graphene_Info.plist; path = Graphene.xcodeproj/Graphene_Info.plist; sourceTree = SOURCE_ROOT; };
@@ -146,9 +144,8 @@
 		8B1136451DC621D3002F2748 /* Intrinsics */ = {
 			isa = PBXGroup;
 			children = (
-				8BB5583B1DCF0B1400D6202A /* Graphene-Bridging-Header.h */,
-				8BB5583C1DCF0B1400D6202A /* intrinsics.h */,
-				8BB558271DCF056300D6202A /* intrinsics.c */,
+				8BB5583C1DCF0B1400D6202A /* Intrinsics.h */,
+				8BB558271DCF056300D6202A /* Intrinsics.c */,
 			);
 			path = Intrinsics;
 			sourceTree = "<group>";
@@ -254,7 +251,6 @@
 		"_______Group_Graphene" /* Graphene */ = {
 			isa = PBXGroup;
 			children = (
-				8BB5583D1DCF0B1400D6202A /* Swift_Bridging_Header.h */,
 				8B1136371DC621D3002F2748 /* Board */,
 				8B11363F1DC621D3002F2748 /* Communication */,
 				8B1136411DC621D3002F2748 /* Evaluator */,
@@ -380,7 +376,7 @@
 				8BB558171DCF04F400D6202A /* GreedyThink.swift in Sources */,
 				8BB557FC1DCF048200D6202A /* Zones.swift in Sources */,
 				8BB557F91DCF048200D6202A /* BoardRepresentation.swift in Sources */,
-				8BB5583A1DCF073D00D6202A /* intrinsics.c in Sources */,
+				8BB5583A1DCF073D00D6202A /* Intrinsics.c in Sources */,
 				8BB558041DCF04AD00D6202A /* SimpleEvaluator.swift in Sources */,
 				8BB557FE1DCF049500D6202A /* EdaxProtocol.swift in Sources */,
 				8BB557F61DCF048200D6202A /* Board.swift in Sources */,
