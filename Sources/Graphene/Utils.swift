@@ -66,7 +66,7 @@ func nextTurn(_ color: Pieces) -> Pieces {
 
 func cs_arc4random_uniform(upperBound : UInt32 = UINT32_MAX) -> UInt32 {
     #if os(Linux)
-        return _swift_stdlib_arc4random_uniform(upperBound)
+        return _swift_stdlib_cxx11_mt19937_uniform(upperBound)
     #else
         return arc4random_uniform(upperBound)
     #endif
