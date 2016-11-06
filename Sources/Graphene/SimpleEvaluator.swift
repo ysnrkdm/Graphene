@@ -27,13 +27,13 @@ open class SimpleEvaluator: BitBoardEvaluator {
     }
 
     override open func evaluate(_ boardRepresentation: BoardRepresentation, forPlayer: Pieces) -> Double {
-        let ePossibleMoves = Double(arc4random()) / Double(UINT32_MAX)
+        let ePossibleMoves = cs_double_random()
 
         return ePossibleMoves
     }
 
     override open func evaluateBitBoard(_ board: BitBoard, forPlayer: Pieces) -> Double {
-        let ePossibleMoves = Double(arc4random()) / Double(UINT32_MAX)
+        let ePossibleMoves = cs_double_random()
 
         return ePossibleMoves
     }

@@ -56,3 +56,22 @@ func nextTurn(_ color: Pieces) -> Pieces {
     }
     return s
 }
+
+#if os(Linux)
+    import Glibc
+    import SwiftShims
+#else
+    import Darwin
+#endif
+
+func cs_arc4random_uniform(upperBound : UInt32 = UINT32_MAX) -> UInt32 {
+    #if os(Linux)
+        return _swift_stdlib_arc4random_uniform(upperBound)
+    #else
+        return arc4random_uniform(upperBound)
+    #endif
+}
+
+func cs_double_random() -> Double {
+    return Double(cs_arc4random_uniform(upperBound: UINT32_MAX)) / Double(UINT32_MAX)
+}

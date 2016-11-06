@@ -58,7 +58,7 @@ public class TreeSearchWithPerturbationThink : Think {
             NSLog("No PV found. Doing random.")
         }
         
-        let ra: Double = Double(arc4random()) / Double(UINT32_MAX)
+        let ra: Double = cs_double_random()
         if randomThreshold > ra {
             NSLog("Doing random play.")
             if puttables.count > 0 {

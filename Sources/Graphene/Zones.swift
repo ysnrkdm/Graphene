@@ -30,7 +30,7 @@ open class Zones {
         var arr: [(Double, (Int, Int))] = []
         let n = n > puttables.count ? puttables.count : n
         for (x, y) in puttables {
-            let ra: Double = Double(arc4random()) / Double(UINT32_MAX)
+            let ra: Double = cs_double_random()
             let a = (ra * zones[y][x], (x, y))
             arr += [a]
         }
