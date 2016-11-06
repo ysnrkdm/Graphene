@@ -10,6 +10,7 @@
 #define __Graphene__intrinsics__
 
 #include <stdio.h>
+#include <stdint.h>
 
 extern unsigned int _bitScanForward(uint64_t board);
 extern unsigned int _bitPop(uint64_t board);

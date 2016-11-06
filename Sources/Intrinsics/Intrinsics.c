@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Yoshinori Kodama. All rights reserved.
 //
 
-#include "include/intrinsics.h"
+#include "include/Intrinsics.h"
+#include <stdint.h>
 
 unsigned int _bitScanForward(uint64_t board) {
     int ret = __builtin_ctzll(board);
