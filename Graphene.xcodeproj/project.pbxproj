@@ -7,35 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B54AB341DC63051006A222F /* Graphene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54AB331DC63051006A222F /* Graphene.swift */; };
-		8BB557BC1DCDE1B600D6202A /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557B51DCDE1B600D6202A /* Board.swift */; };
-		8BB557BD1DCDE1B600D6202A /* BoardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557B61DCDE1B600D6202A /* BoardBuilder.swift */; };
-		8BB557BE1DCDE1B600D6202A /* BoardMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557B71DCDE1B600D6202A /* BoardMediator.swift */; };
-		8BB557BF1DCDE1B600D6202A /* BoardRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557B81DCDE1B600D6202A /* BoardRepresentation.swift */; };
-		8BB557C01DCDE1B600D6202A /* FasterBitBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557B91DCDE1B600D6202A /* FasterBitBoard.swift */; };
-		8BB557C11DCDE1B600D6202A /* SimpleBitBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557BA1DCDE1B600D6202A /* SimpleBitBoard.swift */; };
-		8BB557C21DCDE1B600D6202A /* Zones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557BB1DCDE1B600D6202A /* Zones.swift */; };
-		8BB557C41DCDE1C600D6202A /* EdaxProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557C31DCDE1C600D6202A /* EdaxProtocol.swift */; };
-		8BB557C81DCDE1E600D6202A /* ClassicalEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557C51DCDE1E600D6202A /* ClassicalEvaluator.swift */; };
-		8BB557C91DCDE1E600D6202A /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557C61DCDE1E600D6202A /* Evaluator.swift */; };
-		8BB557CA1DCDE1E600D6202A /* SimpleEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557C71DCDE1E600D6202A /* SimpleEvaluator.swift */; };
-		8BB557CE1DCDE1FB00D6202A /* intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557CC1DCDE1FB00D6202A /* intrinsics.c */; };
-		8BB557D11DCDE20C00D6202A /* ProofSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557CF1DCDE20C00D6202A /* ProofSolver.swift */; };
-		8BB557D21DCDE20C00D6202A /* SimpleProofSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557D01DCDE20C00D6202A /* SimpleProofSolver.swift */; };
-		8BB557D51DCDE21C00D6202A /* NegaAlphaSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557D31DCDE21C00D6202A /* NegaAlphaSearch.swift */; };
-		8BB557D61DCDE21C00D6202A /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557D41DCDE21C00D6202A /* Search.swift */; };
-		8BB557E01DCDE23700D6202A /* GreedyThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557D71DCDE23700D6202A /* GreedyThink.swift */; };
-		8BB557E11DCDE23700D6202A /* LeftyThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557D81DCDE23700D6202A /* LeftyThink.swift */; };
-		8BB557E21DCDE23700D6202A /* RandomWithPNSThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557D91DCDE23700D6202A /* RandomWithPNSThink.swift */; };
-		8BB557E31DCDE23700D6202A /* RandomWithWeightsThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557DA1DCDE23700D6202A /* RandomWithWeightsThink.swift */; };
-		8BB557E41DCDE23700D6202A /* SearchEvalThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557DB1DCDE23700D6202A /* SearchEvalThink.swift */; };
-		8BB557E51DCDE23700D6202A /* SimpleSearchStaticEvaluationThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557DC1DCDE23700D6202A /* SimpleSearchStaticEvaluationThink.swift */; };
-		8BB557E61DCDE23700D6202A /* SwingThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557DD1DCDE23700D6202A /* SwingThink.swift */; };
-		8BB557E71DCDE23700D6202A /* Think.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557DE1DCDE23700D6202A /* Think.swift */; };
-		8BB557E81DCDE23800D6202A /* TreeSearchWithPerturbationThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557DF1DCDE23700D6202A /* TreeSearchWithPerturbationThink.swift */; };
-		8BB557EA1DCDE24600D6202A /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557E91DCDE24600D6202A /* Info.swift */; };
-		8BB557ED1DCDE2A400D6202A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557EB1DCDE2A400D6202A /* Stack.swift */; };
-		8BB557EE1DCDE2A400D6202A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557EC1DCDE2A400D6202A /* Utils.swift */; };
+		8BB557F61DCF048200D6202A /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557EF1DCF048200D6202A /* Board.swift */; };
+		8BB557F71DCF048200D6202A /* BoardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557F01DCF048200D6202A /* BoardBuilder.swift */; };
+		8BB557F81DCF048200D6202A /* BoardMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557F11DCF048200D6202A /* BoardMediator.swift */; };
+		8BB557F91DCF048200D6202A /* BoardRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557F21DCF048200D6202A /* BoardRepresentation.swift */; };
+		8BB557FA1DCF048200D6202A /* FasterBitBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557F31DCF048200D6202A /* FasterBitBoard.swift */; };
+		8BB557FB1DCF048200D6202A /* SimpleBitBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557F41DCF048200D6202A /* SimpleBitBoard.swift */; };
+		8BB557FC1DCF048200D6202A /* Zones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557F51DCF048200D6202A /* Zones.swift */; };
+		8BB557FE1DCF049500D6202A /* EdaxProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557FD1DCF049500D6202A /* EdaxProtocol.swift */; };
+		8BB558021DCF04AD00D6202A /* ClassicalEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557FF1DCF04AD00D6202A /* ClassicalEvaluator.swift */; };
+		8BB558031DCF04AD00D6202A /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558001DCF04AD00D6202A /* Evaluator.swift */; };
+		8BB558041DCF04AD00D6202A /* SimpleEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558011DCF04AD00D6202A /* SimpleEvaluator.swift */; };
+		8BB558071DCF04C600D6202A /* ProofSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558051DCF04C600D6202A /* ProofSolver.swift */; };
+		8BB558081DCF04C600D6202A /* SimpleProofSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558061DCF04C600D6202A /* SimpleProofSolver.swift */; };
+		8BB5580B1DCF04D200D6202A /* NegaAlphaSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558091DCF04D200D6202A /* NegaAlphaSearch.swift */; };
+		8BB5580C1DCF04D200D6202A /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5580A1DCF04D200D6202A /* Search.swift */; };
+		8BB558171DCF04F400D6202A /* GreedyThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5580D1DCF04F400D6202A /* GreedyThink.swift */; };
+		8BB558181DCF04F400D6202A /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5580E1DCF04F400D6202A /* Info.swift */; };
+		8BB558191DCF04F400D6202A /* LeftyThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5580F1DCF04F400D6202A /* LeftyThink.swift */; };
+		8BB5581A1DCF04F400D6202A /* RandomWithPNSThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558101DCF04F400D6202A /* RandomWithPNSThink.swift */; };
+		8BB5581B1DCF04F400D6202A /* RandomWithWeightsThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558111DCF04F400D6202A /* RandomWithWeightsThink.swift */; };
+		8BB5581C1DCF04F400D6202A /* SearchEvalThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558121DCF04F400D6202A /* SearchEvalThink.swift */; };
+		8BB5581D1DCF04F400D6202A /* SimpleSearchStaticEvaluationThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558131DCF04F400D6202A /* SimpleSearchStaticEvaluationThink.swift */; };
+		8BB5581E1DCF04F400D6202A /* SwingThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558141DCF04F400D6202A /* SwingThink.swift */; };
+		8BB5581F1DCF04F400D6202A /* Think.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558151DCF04F400D6202A /* Think.swift */; };
+		8BB558201DCF04F400D6202A /* TreeSearchWithPerturbationThink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558161DCF04F400D6202A /* TreeSearchWithPerturbationThink.swift */; };
+		8BB558231DCF052200D6202A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558211DCF052200D6202A /* Stack.swift */; };
+		8BB558241DCF052200D6202A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558221DCF052200D6202A /* Utils.swift */; };
+		8BB5583A1DCF073D00D6202A /* intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558271DCF056300D6202A /* intrinsics.c */; };
 		_LinkFileRef_Graphene_via_GrapheneTestSuite /* Graphene.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Graphene" /* Graphene.framework */; };
 		__src_cc_ref_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift */; };
 /* End PBXBuildFile section */
@@ -51,38 +50,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8B11364F1DC621D3002F2748 /* Swift_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swift_Bridging_Header.h; sourceTree = "<group>"; };
-		8B54AB331DC63051006A222F /* Graphene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphene.swift; sourceTree = "<group>"; };
-		8BB557B51DCDE1B600D6202A /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = Sources/Board.swift; sourceTree = SOURCE_ROOT; };
-		8BB557B61DCDE1B600D6202A /* BoardBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardBuilder.swift; path = Sources/BoardBuilder.swift; sourceTree = SOURCE_ROOT; };
-		8BB557B71DCDE1B600D6202A /* BoardMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardMediator.swift; path = Sources/BoardMediator.swift; sourceTree = SOURCE_ROOT; };
-		8BB557B81DCDE1B600D6202A /* BoardRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardRepresentation.swift; path = Sources/BoardRepresentation.swift; sourceTree = SOURCE_ROOT; };
-		8BB557B91DCDE1B600D6202A /* FasterBitBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FasterBitBoard.swift; path = Sources/FasterBitBoard.swift; sourceTree = SOURCE_ROOT; };
-		8BB557BA1DCDE1B600D6202A /* SimpleBitBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleBitBoard.swift; path = Sources/SimpleBitBoard.swift; sourceTree = SOURCE_ROOT; };
-		8BB557BB1DCDE1B600D6202A /* Zones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Zones.swift; path = Sources/Zones.swift; sourceTree = SOURCE_ROOT; };
-		8BB557C31DCDE1C600D6202A /* EdaxProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EdaxProtocol.swift; path = Sources/EdaxProtocol.swift; sourceTree = SOURCE_ROOT; };
-		8BB557C51DCDE1E600D6202A /* ClassicalEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassicalEvaluator.swift; path = Sources/ClassicalEvaluator.swift; sourceTree = SOURCE_ROOT; };
-		8BB557C61DCDE1E600D6202A /* Evaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Evaluator.swift; path = Sources/Evaluator.swift; sourceTree = SOURCE_ROOT; };
-		8BB557C71DCDE1E600D6202A /* SimpleEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleEvaluator.swift; path = Sources/SimpleEvaluator.swift; sourceTree = SOURCE_ROOT; };
-		8BB557CB1DCDE1FB00D6202A /* Graphene-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Graphene-Bridging-Header.h"; path = "Sources/Graphene-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		8BB557CC1DCDE1FB00D6202A /* intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = intrinsics.c; path = Sources/intrinsics.c; sourceTree = SOURCE_ROOT; };
-		8BB557CD1DCDE1FB00D6202A /* intrinsics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = intrinsics.h; path = Sources/intrinsics.h; sourceTree = SOURCE_ROOT; };
-		8BB557CF1DCDE20C00D6202A /* ProofSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProofSolver.swift; path = Sources/ProofSolver.swift; sourceTree = SOURCE_ROOT; };
-		8BB557D01DCDE20C00D6202A /* SimpleProofSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleProofSolver.swift; path = Sources/SimpleProofSolver.swift; sourceTree = SOURCE_ROOT; };
-		8BB557D31DCDE21C00D6202A /* NegaAlphaSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NegaAlphaSearch.swift; path = Sources/NegaAlphaSearch.swift; sourceTree = SOURCE_ROOT; };
-		8BB557D41DCDE21C00D6202A /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Search.swift; path = Sources/Search.swift; sourceTree = SOURCE_ROOT; };
-		8BB557D71DCDE23700D6202A /* GreedyThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreedyThink.swift; path = Sources/GreedyThink.swift; sourceTree = SOURCE_ROOT; };
-		8BB557D81DCDE23700D6202A /* LeftyThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftyThink.swift; path = Sources/LeftyThink.swift; sourceTree = SOURCE_ROOT; };
-		8BB557D91DCDE23700D6202A /* RandomWithPNSThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomWithPNSThink.swift; path = Sources/RandomWithPNSThink.swift; sourceTree = SOURCE_ROOT; };
-		8BB557DA1DCDE23700D6202A /* RandomWithWeightsThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomWithWeightsThink.swift; path = Sources/RandomWithWeightsThink.swift; sourceTree = SOURCE_ROOT; };
-		8BB557DB1DCDE23700D6202A /* SearchEvalThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchEvalThink.swift; path = Sources/SearchEvalThink.swift; sourceTree = SOURCE_ROOT; };
-		8BB557DC1DCDE23700D6202A /* SimpleSearchStaticEvaluationThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleSearchStaticEvaluationThink.swift; path = Sources/SimpleSearchStaticEvaluationThink.swift; sourceTree = SOURCE_ROOT; };
-		8BB557DD1DCDE23700D6202A /* SwingThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwingThink.swift; path = Sources/SwingThink.swift; sourceTree = SOURCE_ROOT; };
-		8BB557DE1DCDE23700D6202A /* Think.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Think.swift; path = Sources/Think.swift; sourceTree = SOURCE_ROOT; };
-		8BB557DF1DCDE23700D6202A /* TreeSearchWithPerturbationThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeSearchWithPerturbationThink.swift; path = Sources/TreeSearchWithPerturbationThink.swift; sourceTree = SOURCE_ROOT; };
-		8BB557E91DCDE24600D6202A /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Info.swift; path = Sources/Info.swift; sourceTree = SOURCE_ROOT; };
-		8BB557EB1DCDE2A400D6202A /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = Sources/Stack.swift; sourceTree = SOURCE_ROOT; };
-		8BB557EC1DCDE2A400D6202A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = SOURCE_ROOT; };
+		8BB557EF1DCF048200D6202A /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = Sources/Graphene/Board.swift; sourceTree = SOURCE_ROOT; };
+		8BB557F01DCF048200D6202A /* BoardBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardBuilder.swift; path = Sources/Graphene/BoardBuilder.swift; sourceTree = SOURCE_ROOT; };
+		8BB557F11DCF048200D6202A /* BoardMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardMediator.swift; path = Sources/Graphene/BoardMediator.swift; sourceTree = SOURCE_ROOT; };
+		8BB557F21DCF048200D6202A /* BoardRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardRepresentation.swift; path = Sources/Graphene/BoardRepresentation.swift; sourceTree = SOURCE_ROOT; };
+		8BB557F31DCF048200D6202A /* FasterBitBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FasterBitBoard.swift; path = Sources/Graphene/FasterBitBoard.swift; sourceTree = SOURCE_ROOT; };
+		8BB557F41DCF048200D6202A /* SimpleBitBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleBitBoard.swift; path = Sources/Graphene/SimpleBitBoard.swift; sourceTree = SOURCE_ROOT; };
+		8BB557F51DCF048200D6202A /* Zones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Zones.swift; path = Sources/Graphene/Zones.swift; sourceTree = SOURCE_ROOT; };
+		8BB557FD1DCF049500D6202A /* EdaxProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EdaxProtocol.swift; path = Sources/Graphene/EdaxProtocol.swift; sourceTree = SOURCE_ROOT; };
+		8BB557FF1DCF04AD00D6202A /* ClassicalEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassicalEvaluator.swift; path = Sources/Graphene/ClassicalEvaluator.swift; sourceTree = SOURCE_ROOT; };
+		8BB558001DCF04AD00D6202A /* Evaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Evaluator.swift; path = Sources/Graphene/Evaluator.swift; sourceTree = SOURCE_ROOT; };
+		8BB558011DCF04AD00D6202A /* SimpleEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleEvaluator.swift; path = Sources/Graphene/SimpleEvaluator.swift; sourceTree = SOURCE_ROOT; };
+		8BB558051DCF04C600D6202A /* ProofSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProofSolver.swift; path = Sources/Graphene/ProofSolver.swift; sourceTree = SOURCE_ROOT; };
+		8BB558061DCF04C600D6202A /* SimpleProofSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleProofSolver.swift; path = Sources/Graphene/SimpleProofSolver.swift; sourceTree = SOURCE_ROOT; };
+		8BB558091DCF04D200D6202A /* NegaAlphaSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NegaAlphaSearch.swift; path = Sources/Graphene/NegaAlphaSearch.swift; sourceTree = SOURCE_ROOT; };
+		8BB5580A1DCF04D200D6202A /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Search.swift; path = Sources/Graphene/Search.swift; sourceTree = SOURCE_ROOT; };
+		8BB5580D1DCF04F400D6202A /* GreedyThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreedyThink.swift; path = Sources/Graphene/GreedyThink.swift; sourceTree = SOURCE_ROOT; };
+		8BB5580E1DCF04F400D6202A /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Info.swift; path = Sources/Graphene/Info.swift; sourceTree = SOURCE_ROOT; };
+		8BB5580F1DCF04F400D6202A /* LeftyThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftyThink.swift; path = Sources/Graphene/LeftyThink.swift; sourceTree = SOURCE_ROOT; };
+		8BB558101DCF04F400D6202A /* RandomWithPNSThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomWithPNSThink.swift; path = Sources/Graphene/RandomWithPNSThink.swift; sourceTree = SOURCE_ROOT; };
+		8BB558111DCF04F400D6202A /* RandomWithWeightsThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomWithWeightsThink.swift; path = Sources/Graphene/RandomWithWeightsThink.swift; sourceTree = SOURCE_ROOT; };
+		8BB558121DCF04F400D6202A /* SearchEvalThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchEvalThink.swift; path = Sources/Graphene/SearchEvalThink.swift; sourceTree = SOURCE_ROOT; };
+		8BB558131DCF04F400D6202A /* SimpleSearchStaticEvaluationThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleSearchStaticEvaluationThink.swift; path = Sources/Graphene/SimpleSearchStaticEvaluationThink.swift; sourceTree = SOURCE_ROOT; };
+		8BB558141DCF04F400D6202A /* SwingThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwingThink.swift; path = Sources/Graphene/SwingThink.swift; sourceTree = SOURCE_ROOT; };
+		8BB558151DCF04F400D6202A /* Think.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Think.swift; path = Sources/Graphene/Think.swift; sourceTree = SOURCE_ROOT; };
+		8BB558161DCF04F400D6202A /* TreeSearchWithPerturbationThink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeSearchWithPerturbationThink.swift; path = Sources/Graphene/TreeSearchWithPerturbationThink.swift; sourceTree = SOURCE_ROOT; };
+		8BB558211DCF052200D6202A /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = Sources/Graphene/Stack.swift; sourceTree = SOURCE_ROOT; };
+		8BB558221DCF052200D6202A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Graphene/Utils.swift; sourceTree = SOURCE_ROOT; };
+		8BB558251DCF055500D6202A /* Swift_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Swift_Bridging_Header.h; path = Intrinsics/Swift_Bridging_Header.h; sourceTree = "<group>"; };
+		8BB558261DCF056300D6202A /* Graphene-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Graphene-Bridging-Header.h"; sourceTree = "<group>"; };
+		8BB558271DCF056300D6202A /* intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = intrinsics.c; sourceTree = "<group>"; };
+		8BB558281DCF056300D6202A /* intrinsics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intrinsics.h; sourceTree = "<group>"; };
+		8BB558311DCF06D700D6202A /* Intrinsics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Intrinsics.h; sourceTree = "<group>"; };
+		8BB558321DCF06D700D6202A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		__PBXFileRef_Graphene.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Graphene.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_GrapheneTestSuite_Info.plist /* GrapheneTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = GrapheneTestSuite_Info.plist; path = Graphene.xcodeproj/GrapheneTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
 		__PBXFileRef_Graphene_Info.plist /* Graphene_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Graphene_Info.plist; path = Graphene.xcodeproj/Graphene_Info.plist; sourceTree = SOURCE_ROOT; };
@@ -114,13 +114,13 @@
 		8B1136371DC621D3002F2748 /* Board */ = {
 			isa = PBXGroup;
 			children = (
-				8BB557B51DCDE1B600D6202A /* Board.swift */,
-				8BB557B61DCDE1B600D6202A /* BoardBuilder.swift */,
-				8BB557B71DCDE1B600D6202A /* BoardMediator.swift */,
-				8BB557B81DCDE1B600D6202A /* BoardRepresentation.swift */,
-				8BB557B91DCDE1B600D6202A /* FasterBitBoard.swift */,
-				8BB557BA1DCDE1B600D6202A /* SimpleBitBoard.swift */,
-				8BB557BB1DCDE1B600D6202A /* Zones.swift */,
+				8BB557EF1DCF048200D6202A /* Board.swift */,
+				8BB557F01DCF048200D6202A /* BoardBuilder.swift */,
+				8BB557F11DCF048200D6202A /* BoardMediator.swift */,
+				8BB557F21DCF048200D6202A /* BoardRepresentation.swift */,
+				8BB557F31DCF048200D6202A /* FasterBitBoard.swift */,
+				8BB557F41DCF048200D6202A /* SimpleBitBoard.swift */,
+				8BB557F51DCF048200D6202A /* Zones.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -128,7 +128,7 @@
 		8B11363F1DC621D3002F2748 /* Communication */ = {
 			isa = PBXGroup;
 			children = (
-				8BB557C31DCDE1C600D6202A /* EdaxProtocol.swift */,
+				8BB557FD1DCF049500D6202A /* EdaxProtocol.swift */,
 			);
 			path = Communication;
 			sourceTree = "<group>";
@@ -136,9 +136,9 @@
 		8B1136411DC621D3002F2748 /* Evaluator */ = {
 			isa = PBXGroup;
 			children = (
-				8BB557C51DCDE1E600D6202A /* ClassicalEvaluator.swift */,
-				8BB557C61DCDE1E600D6202A /* Evaluator.swift */,
-				8BB557C71DCDE1E600D6202A /* SimpleEvaluator.swift */,
+				8BB557FF1DCF04AD00D6202A /* ClassicalEvaluator.swift */,
+				8BB558001DCF04AD00D6202A /* Evaluator.swift */,
+				8BB558011DCF04AD00D6202A /* SimpleEvaluator.swift */,
 			);
 			path = Evaluator;
 			sourceTree = "<group>";
@@ -146,9 +146,9 @@
 		8B1136451DC621D3002F2748 /* Intrinsics */ = {
 			isa = PBXGroup;
 			children = (
-				8BB557CB1DCDE1FB00D6202A /* Graphene-Bridging-Header.h */,
-				8BB557CC1DCDE1FB00D6202A /* intrinsics.c */,
-				8BB557CD1DCDE1FB00D6202A /* intrinsics.h */,
+				8BB558261DCF056300D6202A /* Graphene-Bridging-Header.h */,
+				8BB558271DCF056300D6202A /* intrinsics.c */,
+				8BB558281DCF056300D6202A /* intrinsics.h */,
 			);
 			path = Intrinsics;
 			sourceTree = "<group>";
@@ -156,8 +156,8 @@
 		8B1136491DC621D3002F2748 /* ProofSolver */ = {
 			isa = PBXGroup;
 			children = (
-				8BB557CF1DCDE20C00D6202A /* ProofSolver.swift */,
-				8BB557D01DCDE20C00D6202A /* SimpleProofSolver.swift */,
+				8BB558051DCF04C600D6202A /* ProofSolver.swift */,
+				8BB558061DCF04C600D6202A /* SimpleProofSolver.swift */,
 			);
 			path = ProofSolver;
 			sourceTree = "<group>";
@@ -165,8 +165,8 @@
 		8B11364C1DC621D3002F2748 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				8BB557D31DCDE21C00D6202A /* NegaAlphaSearch.swift */,
-				8BB557D41DCDE21C00D6202A /* Search.swift */,
+				8BB558091DCF04D200D6202A /* NegaAlphaSearch.swift */,
+				8BB5580A1DCF04D200D6202A /* Search.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -174,16 +174,16 @@
 		8B1136501DC621D3002F2748 /* Think */ = {
 			isa = PBXGroup;
 			children = (
-				8BB557E91DCDE24600D6202A /* Info.swift */,
-				8BB557DA1DCDE23700D6202A /* RandomWithWeightsThink.swift */,
-				8BB557DE1DCDE23700D6202A /* Think.swift */,
-				8BB557D91DCDE23700D6202A /* RandomWithPNSThink.swift */,
-				8BB557D71DCDE23700D6202A /* GreedyThink.swift */,
-				8BB557DC1DCDE23700D6202A /* SimpleSearchStaticEvaluationThink.swift */,
-				8BB557DB1DCDE23700D6202A /* SearchEvalThink.swift */,
-				8BB557DF1DCDE23700D6202A /* TreeSearchWithPerturbationThink.swift */,
-				8BB557D81DCDE23700D6202A /* LeftyThink.swift */,
-				8BB557DD1DCDE23700D6202A /* SwingThink.swift */,
+				8BB5580D1DCF04F400D6202A /* GreedyThink.swift */,
+				8BB5580E1DCF04F400D6202A /* Info.swift */,
+				8BB5580F1DCF04F400D6202A /* LeftyThink.swift */,
+				8BB558101DCF04F400D6202A /* RandomWithPNSThink.swift */,
+				8BB558111DCF04F400D6202A /* RandomWithWeightsThink.swift */,
+				8BB558121DCF04F400D6202A /* SearchEvalThink.swift */,
+				8BB558131DCF04F400D6202A /* SimpleSearchStaticEvaluationThink.swift */,
+				8BB558141DCF04F400D6202A /* SwingThink.swift */,
+				8BB558151DCF04F400D6202A /* Think.swift */,
+				8BB558161DCF04F400D6202A /* TreeSearchWithPerturbationThink.swift */,
 			);
 			path = Think;
 			sourceTree = "<group>";
@@ -191,10 +191,19 @@
 		8B1136541DC621D3002F2748 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				8BB557EB1DCDE2A400D6202A /* Stack.swift */,
-				8BB557EC1DCDE2A400D6202A /* Utils.swift */,
+				8BB558211DCF052200D6202A /* Stack.swift */,
+				8BB558221DCF052200D6202A /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		8BB558301DCF06D700D6202A /* Intrinsics */ = {
+			isa = PBXGroup;
+			children = (
+				8BB558311DCF06D700D6202A /* Intrinsics.h */,
+				8BB558321DCF06D700D6202A /* Info.plist */,
+			);
+			path = Intrinsics;
 			sourceTree = "<group>";
 		};
 		TestProducts_ /* Tests */ = {
@@ -212,6 +221,7 @@
 				"_____Configs_" /* Configs */,
 				"_____Sources_" /* Sources */,
 				"_______Tests_" /* Tests */,
+				8BB558301DCF06D700D6202A /* Intrinsics */,
 				"____Products_" /* Products */,
 			);
 			sourceTree = "<group>";
@@ -244,14 +254,13 @@
 		"_______Group_Graphene" /* Graphene */ = {
 			isa = PBXGroup;
 			children = (
-				8B54AB331DC63051006A222F /* Graphene.swift */,
+				8BB558251DCF055500D6202A /* Swift_Bridging_Header.h */,
 				8B1136371DC621D3002F2748 /* Board */,
 				8B11363F1DC621D3002F2748 /* Communication */,
 				8B1136411DC621D3002F2748 /* Evaluator */,
 				8B1136451DC621D3002F2748 /* Intrinsics */,
 				8B1136491DC621D3002F2748 /* ProofSolver */,
 				8B11364C1DC621D3002F2748 /* Search */,
-				8B11364F1DC621D3002F2748 /* Swift_Bridging_Header.h */,
 				8B1136501DC621D3002F2748 /* Think */,
 				8B1136541DC621D3002F2748 /* Utils */,
 				__PBXFileRef_Graphene_Info.plist /* Graphene_Info.plist */,
@@ -352,35 +361,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				8BB557BC1DCDE1B600D6202A /* Board.swift in Sources */,
-				8BB557E31DCDE23700D6202A /* RandomWithWeightsThink.swift in Sources */,
-				8BB557C11DCDE1B600D6202A /* SimpleBitBoard.swift in Sources */,
-				8BB557EA1DCDE24600D6202A /* Info.swift in Sources */,
-				8BB557E41DCDE23700D6202A /* SearchEvalThink.swift in Sources */,
-				8BB557E81DCDE23800D6202A /* TreeSearchWithPerturbationThink.swift in Sources */,
-				8BB557C91DCDE1E600D6202A /* Evaluator.swift in Sources */,
-				8BB557E01DCDE23700D6202A /* GreedyThink.swift in Sources */,
-				8BB557E71DCDE23700D6202A /* Think.swift in Sources */,
-				8B54AB341DC63051006A222F /* Graphene.swift in Sources */,
-				8BB557BE1DCDE1B600D6202A /* BoardMediator.swift in Sources */,
-				8BB557CA1DCDE1E600D6202A /* SimpleEvaluator.swift in Sources */,
-				8BB557E61DCDE23700D6202A /* SwingThink.swift in Sources */,
-				8BB557E51DCDE23700D6202A /* SimpleSearchStaticEvaluationThink.swift in Sources */,
-				8BB557BD1DCDE1B600D6202A /* BoardBuilder.swift in Sources */,
-				8BB557D61DCDE21C00D6202A /* Search.swift in Sources */,
-				8BB557ED1DCDE2A400D6202A /* Stack.swift in Sources */,
-				8BB557BF1DCDE1B600D6202A /* BoardRepresentation.swift in Sources */,
-				8BB557D11DCDE20C00D6202A /* ProofSolver.swift in Sources */,
-				8BB557C81DCDE1E600D6202A /* ClassicalEvaluator.swift in Sources */,
-				8BB557EE1DCDE2A400D6202A /* Utils.swift in Sources */,
-				8BB557C41DCDE1C600D6202A /* EdaxProtocol.swift in Sources */,
-				8BB557D51DCDE21C00D6202A /* NegaAlphaSearch.swift in Sources */,
-				8BB557E11DCDE23700D6202A /* LeftyThink.swift in Sources */,
-				8BB557CE1DCDE1FB00D6202A /* intrinsics.c in Sources */,
-				8BB557D21DCDE20C00D6202A /* SimpleProofSolver.swift in Sources */,
-				8BB557C21DCDE1B600D6202A /* Zones.swift in Sources */,
-				8BB557C01DCDE1B600D6202A /* FasterBitBoard.swift in Sources */,
-				8BB557E21DCDE23700D6202A /* RandomWithPNSThink.swift in Sources */,
+				8BB5581B1DCF04F400D6202A /* RandomWithWeightsThink.swift in Sources */,
+				8BB557FB1DCF048200D6202A /* SimpleBitBoard.swift in Sources */,
+				8BB557FA1DCF048200D6202A /* FasterBitBoard.swift in Sources */,
+				8BB5581C1DCF04F400D6202A /* SearchEvalThink.swift in Sources */,
+				8BB558201DCF04F400D6202A /* TreeSearchWithPerturbationThink.swift in Sources */,
+				8BB558241DCF052200D6202A /* Utils.swift in Sources */,
+				8BB558181DCF04F400D6202A /* Info.swift in Sources */,
+				8BB5581F1DCF04F400D6202A /* Think.swift in Sources */,
+				8BB557F71DCF048200D6202A /* BoardBuilder.swift in Sources */,
+				8BB558031DCF04AD00D6202A /* Evaluator.swift in Sources */,
+				8BB5580B1DCF04D200D6202A /* NegaAlphaSearch.swift in Sources */,
+				8BB5581E1DCF04F400D6202A /* SwingThink.swift in Sources */,
+				8BB558081DCF04C600D6202A /* SimpleProofSolver.swift in Sources */,
+				8BB558071DCF04C600D6202A /* ProofSolver.swift in Sources */,
+				8BB5581D1DCF04F400D6202A /* SimpleSearchStaticEvaluationThink.swift in Sources */,
+				8BB557F81DCF048200D6202A /* BoardMediator.swift in Sources */,
+				8BB558171DCF04F400D6202A /* GreedyThink.swift in Sources */,
+				8BB557FC1DCF048200D6202A /* Zones.swift in Sources */,
+				8BB557F91DCF048200D6202A /* BoardRepresentation.swift in Sources */,
+				8BB5583A1DCF073D00D6202A /* intrinsics.c in Sources */,
+				8BB558041DCF04AD00D6202A /* SimpleEvaluator.swift in Sources */,
+				8BB557FE1DCF049500D6202A /* EdaxProtocol.swift in Sources */,
+				8BB557F61DCF048200D6202A /* Board.swift in Sources */,
+				8BB558231DCF052200D6202A /* Stack.swift in Sources */,
+				8BB558191DCF04F400D6202A /* LeftyThink.swift in Sources */,
+				8BB5580C1DCF04D200D6202A /* Search.swift in Sources */,
+				8BB558021DCF04AD00D6202A /* ClassicalEvaluator.swift in Sources */,
+				8BB5581A1DCF04F400D6202A /* RandomWithPNSThink.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
