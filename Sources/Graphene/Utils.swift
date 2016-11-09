@@ -44,7 +44,7 @@ func max(_ a: Double, b: Double) -> Double {
     return a > b ? a : b
 }
 
-func nextTurn(_ color: Pieces) -> Pieces {
+public func nextTurn(_ color: Pieces) -> Pieces {
     var s : Pieces = .black
     switch color {
     case .black:

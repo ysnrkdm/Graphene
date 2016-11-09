@@ -23,3 +23,10 @@ open class SimpleLogInfo : Info {
         LOG(body: message)
     }
 }
+
+open class NullInfo : Info {
+    public init(){}
+    open func say(message: String) {
+        // Do nothing
+    }
+}

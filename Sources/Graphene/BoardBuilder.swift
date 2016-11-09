@@ -27,8 +27,12 @@ open class BoardBuilder {
             }
             i += 1
         }
-
-        let bm = BoardMediator(board: board)
+        
+        return build(board)
+    }
+    
+    public class func build(_ fromBoard: Board) -> BoardRepresentation {
+        let bm = BoardMediator(board: fromBoard)
         let ret = BoardRepresentation(boardMediator: bm)
         return ret
     }
@@ -51,9 +55,7 @@ open class BoardBuilder {
             }
             i += 1
         }
-
-        let bm = BoardMediator(board: board)
-        let ret = BoardRepresentation(boardMediator: bm)
-        return ret
+        
+        return build(board)
     }
 }
