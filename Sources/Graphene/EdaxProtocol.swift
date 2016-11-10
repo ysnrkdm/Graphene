@@ -9,18 +9,11 @@
 import Foundation
 
 public func handFromEdaxStr(edaxStr: String) -> Move {
-    let pattern = "^([a-hA-H][1-8]|PS)$"
-    if let matches = Regexp(pattern).matches(input: edaxStr) {
-        if matches.count == 2 {
-            let hand = matches[1]
-            if hand.uppercased() == "PS" {
-                return .Pass
-            } else {
-                return handFromStr(str: hand)
-            }
-        }
+    if edaxStr.uppercased() == "PS" {
+        return .Pass
+    } else {
+        return handFromStr(str: edaxStr)
     }
-    return .Invalid
 }
 
 public func handFromStr(str: String) -> Move {
@@ -68,7 +61,11 @@ public func handFromStr(str: String) -> Move {
         default:
             break
         }
-        return .Move(col, row)
+        if (row == -1 || col == -1) {
+            return .Invalid
+        } else {
+            return .Move(col, row)
+        }
     }
     return .Invalid
 }
