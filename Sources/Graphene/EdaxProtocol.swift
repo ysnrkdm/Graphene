@@ -144,7 +144,8 @@ public func processSfen(playerName: String, sfen: String, think: Think, board: B
             print("")
         }
     case "go":
-        print("\n")
+        print("")
+        print("")
         let boardRep = BoardBuilder.build(board)
         if (boardRep.isAnyPuttable(color)) {
             let hand = think.think(color, board: boardRep, info: info)
@@ -164,15 +165,18 @@ public func processSfen(playerName: String, sfen: String, think: Think, board: B
             return .Moved(board)
         }
     default:
+        print("\n")
         switch handFromEdaxStr(edaxStr: sfen) {
         case let .Move(col, row):
             if board.canPut(color, x: col, y: row) {
                 _ = board.put(color, x: col, y: row, guides: false, returnChanges: false)
+                print("You play \(sfen)")
                 return .Moved(board)
             } else {
                 return .Game(board)
             }
         case .Pass:
+            print("You play \(sfen)")
             return .Moved(board)
         case .Invalid:
             print("undefined command..")
