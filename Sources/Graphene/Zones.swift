@@ -40,9 +40,9 @@ open class Zones {
             $0.0 > $1.0
         })
 
-//        NSLog("Eval")
+//        info.say(message: "Eval")
 //        for e in arr {
-//            NSLog("\(e.1.0), \(e.1.1) - \(e.0)")
+//            info.say(message: "\(e.1.0), \(e.1.1) - \(e.0)")
 //        }
 
         var ret: [(Int, Int)] = []

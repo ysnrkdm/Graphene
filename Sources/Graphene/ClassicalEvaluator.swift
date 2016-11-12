@@ -46,7 +46,7 @@ open class ClassicalEvaluator: BitBoardEvaluator {
         // Firstly looking into cache
 //        if forPlayer == .Black {
 //            if let value = boardEvalCacheBlack[boardHashFromTuple(boardRepresentation.hash())] {
-//                NSLog("Black cache - \(boardEvalCacheBlack.count)")
+//                info.say(message: "Black cache - \(boardEvalCacheBlack.count)")
 //                return value
 //            } else {
 //                let value = eval(boardRepresentation, forPlayer: forPlayer)
@@ -55,7 +55,7 @@ open class ClassicalEvaluator: BitBoardEvaluator {
 //            }
 //        } else {
 //            if let value = boardEvalCacheWhite[boardHashFromTuple(boardRepresentation.hash())] {
-//                NSLog("White cache - \(boardEvalCacheWhite.count)")
+//                info.say(message: "White cache - \(boardEvalCacheWhite.count)")
 //                return value
 //            } else {
 //                let value = eval(boardRepresentation, forPlayer: forPlayer)

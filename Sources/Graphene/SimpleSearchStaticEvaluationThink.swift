@@ -45,19 +45,19 @@ public class SimpleSearchStaticEvaluationThink : Think {
         if board.getNumVacant() < pnsLessThan {
             let solver = SimpleProofSolver()
             let answer = solver.solve(board.clone(), forPlayer: color)
-            NSLog("Solving by PNS search...")
+            info.say(message: "Solving by PNS search...")
             if ((answer.proof == .blackWin && color == .black) || (answer.proof == .whiteWin && color == .white)) && answer.moves.count > 0 {
                 (retx, rety) = answer.moves[0]
-                NSLog("Found PV! Answer is \(retx), \(rety)")
+                info.say(message: "Found PV! Answer is \(retx), \(rety)")
                 return Hand(row: rety, col: retx, color: color)
             }
-            NSLog("No PV found. Doing random.")
+            info.say(message: "No PV found. Doing random.")
         }
         
         if puttables.count > 0 {
             let res = sst.search(board.clone(), forPlayer: color, evaluator: evaluator, depth: searchDepth)
             
-            NSLog("Searched -- " + res.toString())
+            info.say(message: "Searched -- " + res.toString())
             let coords = res.pv
             if coords.count > 0 {
                 (retx, rety) = coords[0]

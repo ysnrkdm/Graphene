@@ -35,7 +35,6 @@
 		8BB558231DCF052200D6202A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558211DCF052200D6202A /* Stack.swift */; };
 		8BB558241DCF052200D6202A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558221DCF052200D6202A /* Utils.swift */; };
 		8BB5583A1DCF073D00D6202A /* Intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558271DCF056300D6202A /* Intrinsics.c */; };
-		8BB558471DD367C500D6202A /* Regexp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558461DD367C500D6202A /* Regexp.swift */; };
 		_LinkFileRef_Graphene_via_GrapheneTestSuite /* Graphene.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Graphene" /* Graphene.framework */; };
 		__src_cc_ref_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift */; };
 /* End PBXBuildFile section */
@@ -80,7 +79,6 @@
 		8BB558221DCF052200D6202A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Graphene/Utils.swift; sourceTree = SOURCE_ROOT; };
 		8BB558271DCF056300D6202A /* Intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Intrinsics.c; sourceTree = "<group>"; };
 		8BB5583C1DCF0B1400D6202A /* Intrinsics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Intrinsics.h; path = include/Intrinsics.h; sourceTree = "<group>"; };
-		8BB558461DD367C500D6202A /* Regexp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Regexp.swift; path = Sources/Graphene/Regexp.swift; sourceTree = SOURCE_ROOT; };
 		__PBXFileRef_Graphene.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Graphene.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_GrapheneTestSuite_Info.plist /* GrapheneTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = GrapheneTestSuite_Info.plist; path = Graphene.xcodeproj/GrapheneTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
 		__PBXFileRef_Graphene_Info.plist /* Graphene_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Graphene_Info.plist; path = Graphene.xcodeproj/Graphene_Info.plist; sourceTree = SOURCE_ROOT; };
@@ -190,7 +188,6 @@
 			children = (
 				8BB558211DCF052200D6202A /* Stack.swift */,
 				8BB558221DCF052200D6202A /* Utils.swift */,
-				8BB558461DD367C500D6202A /* Regexp.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -357,7 +354,6 @@
 				8BB558181DCF04F400D6202A /* Info.swift in Sources */,
 				8BB5581F1DCF04F400D6202A /* Think.swift in Sources */,
 				8BB557F71DCF048200D6202A /* BoardBuilder.swift in Sources */,
-				8BB558471DD367C500D6202A /* Regexp.swift in Sources */,
 				8BB558031DCF04AD00D6202A /* Evaluator.swift in Sources */,
 				8BB5580B1DCF04D200D6202A /* NegaAlphaSearch.swift in Sources */,
 				8BB5581E1DCF04F400D6202A /* SwingThink.swift in Sources */,
