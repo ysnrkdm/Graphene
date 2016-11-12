@@ -12,11 +12,11 @@ public func handFromEdaxStr(edaxStr: String) -> Move {
     if edaxStr.uppercased() == "PS" {
         return .Pass
     } else {
-        return handFromStr(str: edaxStr)
+        return moveFromStr(str: edaxStr)
     }
 }
 
-public func handFromStr(str: String) -> Move {
+public func moveFromStr(str: String) -> Move {
     let b = str.uppercased()
     if let first = b.characters.first, let last = b.characters.last {
         var row = -1;
@@ -70,6 +70,39 @@ public func handFromStr(str: String) -> Move {
     return .Invalid
 }
 
+public func strFromMove(move: Move) -> String {
+    switch move {
+    case let .Move(col, row):
+        var first = ""
+        switch col {
+        case 0:
+            first = "A"
+        case 1:
+            first = "B"
+        case 2:
+            first = "C"
+        case 3:
+            first = "D"
+        case 4:
+            first = "E"
+        case 5:
+            first = "F"
+        case 6:
+            first = "G"
+        case 7:
+            first = "H"
+        default:
+            first = "X"
+        }
+        let last = String.init(row + 1)
+        return first + last
+    case .Pass:
+        return "PS"
+    case .Invalid:
+        return "Invalid"
+    }
+}
+
 public enum Move {
     case Move(Int, Int)     // col, row
     case Pass
@@ -82,16 +115,16 @@ public enum Result {
     case Quit
 }
 
-public func processSfen(sfen: String, think: Think, board: Board, color: Pieces, info: Info) -> Result {
+public func processSfen(playerName: String, sfen: String, think: Think, board: Board, color: Pieces, info: Info) -> Result {
     var commands = sfen.components(separatedBy: " ")
     //    print(commands)
     switch commands[0] {
     case "init":
         let bb = SimpleBitBoard()
         bb.initialize(8, height: 8)
+        print("")
         return .Game(bb)
     case "quit":
-        print("byebye!")
         return .Quit
     case "undo":
         print("Not yet implemented")
@@ -111,13 +144,23 @@ public func processSfen(sfen: String, think: Think, board: Board, color: Pieces,
             print("")
         }
     case "go":
+        print("\n")
         let boardRep = BoardBuilder.build(board)
-        let hand = think.think(color, board: boardRep, info: info)
-        if board.canPut(color, x: hand.col, y: hand.row) {
-            _ = board.put(color, x: hand.col, y: hand.row, guides: false, returnChanges: false)
-            return .Moved(board)
+        if (boardRep.isAnyPuttable(color)) {
+            let hand = think.think(color, board: boardRep, info: info)
+            if board.canPut(color, x: hand.col, y: hand.row) {
+                _ = board.put(color, x: hand.col, y: hand.row, guides: false, returnChanges: false)
+                let handStr = strFromMove(move: .Move(hand.col, hand.row))
+                print(">\(playerName) plays \(handStr)")
+                return .Moved(board)
+            } else {
+                // Treat invalid put by think as pass
+                print(">\(playerName) plays PS")
+                return .Moved(board)
+            }
         } else {
             // Treat invalid put by think as pass
+            print(">\(playerName) plays PS")
             return .Moved(board)
         }
     default:
