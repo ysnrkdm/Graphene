@@ -16,11 +16,11 @@ open class BoardBuilder {
         var i = 0
         for c in fromText.characters {
             switch(c) {
-            case "B":
+            case "B", "O":
                 board.set(.black, x: i % 8, y: i / 8)
-            case "W":
+            case "W", "X":
                 board.set(.white, x: i % 8, y: i / 8)
-            case ".":
+            case ".", "-":
                 board.set(.empty, x: i % 8, y: i / 8)
             default:
                 assertionFailure("")

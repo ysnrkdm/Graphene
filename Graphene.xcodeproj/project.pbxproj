@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B7EEDFF2162693600FD774D /* ClassicalEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EEDFE2162693600FD774D /* ClassicalEvaluatorTest.swift */; };
+		8B7EEE002162693B00FD774D /* ClassicalEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EEDFE2162693600FD774D /* ClassicalEvaluatorTest.swift */; };
+		8B88E8A61E12B37700A1CF49 /* ClassicalEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88E8A41E12B37700A1CF49 /* ClassicalEvaluatorTest.swift */; };
 		8BB557F61DCF048200D6202A /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557EF1DCF048200D6202A /* Board.swift */; };
 		8BB557F71DCF048200D6202A /* BoardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557F01DCF048200D6202A /* BoardBuilder.swift */; };
 		8BB557F81DCF048200D6202A /* BoardMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557F11DCF048200D6202A /* BoardMediator.swift */; };
@@ -36,7 +39,6 @@
 		8BB558241DCF052200D6202A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558221DCF052200D6202A /* Utils.swift */; };
 		8BB5583A1DCF073D00D6202A /* Intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB558271DCF056300D6202A /* Intrinsics.c */; };
 		_LinkFileRef_Graphene_via_GrapheneTestSuite /* Graphene.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Graphene" /* Graphene.framework */; };
-		__src_cc_ref_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B66C9B32160C28200745401 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8B7EEDFE2162693600FD774D /* ClassicalEvaluatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicalEvaluatorTest.swift; sourceTree = "<group>"; };
+		8B88E8A41E12B37700A1CF49 /* ClassicalEvaluatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassicalEvaluatorTest.swift; path = Sources/Graphene/ClassicalEvaluatorTest.swift; sourceTree = SOURCE_ROOT; };
 		8BB557EF1DCF048200D6202A /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = Sources/Graphene/Board.swift; sourceTree = SOURCE_ROOT; };
 		8BB557F01DCF048200D6202A /* BoardBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardBuilder.swift; path = Sources/Graphene/BoardBuilder.swift; sourceTree = SOURCE_ROOT; };
 		8BB557F11DCF048200D6202A /* BoardMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardMediator.swift; path = Sources/Graphene/BoardMediator.swift; sourceTree = SOURCE_ROOT; };
@@ -83,7 +88,6 @@
 		__PBXFileRef_GrapheneTestSuite_Info.plist /* GrapheneTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = GrapheneTestSuite_Info.plist; path = Graphene.xcodeproj/GrapheneTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
 		__PBXFileRef_Graphene_Info.plist /* Graphene_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Graphene_Info.plist; path = Graphene.xcodeproj/Graphene_Info.plist; sourceTree = SOURCE_ROOT; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapheneTests.swift; sourceTree = "<group>"; };
 		"_____Product_Graphene" /* Graphene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Graphene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_GrapheneTestSuite" /* GrapheneTestSuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = GrapheneTestSuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -192,6 +196,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		8B66C9B22160C28200745401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B66C9B32160C28200745401 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		TestProducts_ /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +220,7 @@
 				"_____Sources_" /* Sources */,
 				"_______Tests_" /* Tests */,
 				"____Products_" /* Products */,
+				8B66C9B22160C28200745401 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,7 +269,7 @@
 		"_______Group_GrapheneTestSuite" /* GrapheneTestSuite */ = {
 			isa = PBXGroup;
 			children = (
-				__PBXFileRef_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift */,
+				8B88E8A41E12B37700A1CF49 /* ClassicalEvaluatorTest.swift */,
 				__PBXFileRef_GrapheneTestSuite_Info.plist /* GrapheneTestSuite_Info.plist */,
 			);
 			name = GrapheneTestSuite;
@@ -266,6 +279,7 @@
 		"_______Tests_" /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8B7EEDFE2162693600FD774D /* ClassicalEvaluatorTest.swift */,
 				"_______Group_GrapheneTestSuite" /* GrapheneTestSuite */,
 			);
 			name = Tests;
@@ -320,6 +334,9 @@
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Manual;
 					};
+					"______Target_GrapheneTestSuite" = {
+						LastSwiftMigration = 0820;
+					};
 				};
 			};
 			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "Graphene" */;
@@ -346,6 +363,7 @@
 			buildActionMask = 0;
 			files = (
 				8BB5581B1DCF04F400D6202A /* RandomWithWeightsThink.swift in Sources */,
+				8B7EEDFF2162693600FD774D /* ClassicalEvaluatorTest.swift in Sources */,
 				8BB557FB1DCF048200D6202A /* SimpleBitBoard.swift in Sources */,
 				8BB557FA1DCF048200D6202A /* FasterBitBoard.swift in Sources */,
 				8BB5581C1DCF04F400D6202A /* SearchEvalThink.swift in Sources */,
@@ -380,7 +398,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				__src_cc_ref_Tests/Graphene/GrapheneTests.swift /* GrapheneTests.swift in Sources */,
+				8B88E8A61E12B37700A1CF49 /* ClassicalEvaluatorTest.swift in Sources */,
+				8B7EEE002162693B00FD774D /* ClassicalEvaluatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -468,6 +488,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
