@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B7EEDFF2162693600FD774D /* ClassicalEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EEDFE2162693600FD774D /* ClassicalEvaluatorTest.swift */; };
 		8B7EEE002162693B00FD774D /* ClassicalEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EEDFE2162693600FD774D /* ClassicalEvaluatorTest.swift */; };
 		8B88E8A61E12B37700A1CF49 /* ClassicalEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88E8A41E12B37700A1CF49 /* ClassicalEvaluatorTest.swift */; };
 		8BB557F61DCF048200D6202A /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB557EF1DCF048200D6202A /* Board.swift */; };
@@ -331,7 +330,7 @@
 				TargetAttributes = {
 					"______Target_Graphene" = {
 						DevelopmentTeam = X946KV89SN;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Manual;
 					};
 					"______Target_GrapheneTestSuite" = {
@@ -363,7 +362,6 @@
 			buildActionMask = 0;
 			files = (
 				8BB5581B1DCF04F400D6202A /* RandomWithWeightsThink.swift in Sources */,
-				8B7EEDFF2162693600FD774D /* ClassicalEvaluatorTest.swift in Sources */,
 				8BB557FB1DCF048200D6202A /* SimpleBitBoard.swift in Sources */,
 				8BB557FA1DCF048200D6202A /* FasterBitBoard.swift in Sources */,
 				8BB5581C1DCF04F400D6202A /* SearchEvalThink.swift in Sources */,
@@ -433,7 +431,8 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 			};
 			name = Release;
@@ -472,7 +471,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 			};
 			name = Debug;
